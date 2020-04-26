@@ -88,8 +88,6 @@ app.put('/usuarios/:id', [verificaToken, verificaAdminRole], (req, res) => {
             usuario: usuarioDB
         });
     });
-
-    
 });
 
 app.delete('/usuarios/:id', [verificaToken, verificaAdminRole], (req, res) => {
